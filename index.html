@@ -59,17 +59,14 @@ display: block;
 }
 
 .gallery img {
-  flex: 1 1 calc(20% - 20px); /* Adjusts width: 20% per image minus gap */
-  max-width: 220px; /* Ensures the images fit nicely */
-  height: auto;
+  flex: 0 1 calc(20% - 10px); /* Ensures all 5 images fit in one line */
+  width: calc(130% * 20%); /* Increases width by approximately 30% */
+  height: auto; /* Keeps aspect ratio consistent */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.gallery img:nth-child(1),
-.gallery img:nth-child(2) {
-  flex: 1 1 calc(45% - 20px); /* Makes the first two images wider */
-}
+
 
 .news-articles {
 padding: 20px;
