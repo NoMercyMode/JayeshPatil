@@ -50,18 +50,25 @@ height: 315px;
 margin: 0 auto;
 display: block;
 }
-}
+
 .gallery {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of rows */
+  justify-content: center; /* Centers the images */
+  gap: 20px; /* Adds spacing between images */
 }
+
 .gallery img {
-max-height: 230px;
-width: auto;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex: 1 1 calc(20% - 20px); /* Adjusts width: 20% per image minus gap */
+  max-width: 220px; /* Ensures the images fit nicely */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:nth-child(1),
+.gallery img:nth-child(2) {
+  flex: 1 1 calc(45% - 20px); /* Makes the first two images wider */
 }
 
 .news-articles {
@@ -91,42 +98,55 @@ text-decoration: underline;
 </div>
 
 <section>
-<p><strong>This individual is a scammer who has deceived multiple women under various aliases</strong>, including Jayesh Patil, Tanmay Mhatre, Aditya Mhatre, and Navhoosh Mhatre.</p>
-<p>His real name is <strong>Adarsh Prashant Mhatre</strong>, and he is originally from <strong>Kegaon, Uran, District Raigad</strong>. He has lived in Hashiware, Alibaug (his maternal home), and Bhopal. Currently, he resides in Pune but frequently visits his family and relatives in Turade, Rasayani, and the Panvel Area. To evade the authorities, he often changes his location.</p>
-<p><strong>He has multiple legal cases against him and is currently out on bail.</strong></p>
-<p>He targets women, especially working professionals in Pune and Mumbai, by impersonating an ISRO scientist, IPS officer, or IAS officer using fake ID cards. After gaining their trust, he deceives them into giving him money. He is a married man with a wife and son who live in Bhopal.</p>
-<p><strong>If you have encountered him or fallen victim to his fraud, please report it to the Thane Crime Branch:</strong></p>
-<ul>
-<li>Email: cp.thane.online@mahapolice.gov.in</li>
-<p>lcb.thane.r@mahapolice.gov.in</p>
-<li>Phone: 022-25343567</li>
-</ul>
-<p>This page is dedicated to raising awareness about his fraudulent activities. <strong>Stay alert and do not fall for his scams!</strong></p>
+  <p><strong>This individual, Adarsh Prashant Mhatre, is a notorious scammer who has deceived numerous women under various aliases, including Jayesh Patil, Tanmay Mhatre, Aditya Mhatre, and Navhoosh Mhatre.</strong></p>
+  <p>Adarsh Mhatre is originally from <strong>Kegaon, Uran, District Raigad</strong>, and has lived in <strong>Hashiware, Alibaug (his maternal home)</strong>, and <strong>Bhopal</strong>. Currently, he resides in <strong>Pune</strong> but frequently visits his family and relatives in <strong>Turade, Rasayani, and the Panvel area</strong>. To evade authorities, he constantly changes his location and identity.</p>
+  <p>Adarsh Mhatre is a married man with a wife and son who live in <strong>Bhopal</strong>. He has been carrying out these fraudulent activities since <strong>2019</strong> and continues to do so despite being arrested multiple times. This highlights a significant failure of the <strong>police and judiciary</strong>, as he remains free to exploit more victims.</p>
+  <p>Adarsh Mhatre is known to flaunt his ill-gotten wealth on <strong>social media</strong>, showcasing <strong>luxury cars</strong> and a lavish lifestyle. He often arrives to meet his victims with a <strong>chauffeur-driven car</strong>, further enhancing his false image of success. Reports also indicate that he spends large sums of money on <strong>gambling</strong> and stays at <strong>luxury hotels in Goa</strong>.</p>
 
+  <p>Adarsh Mhatre impersonates high-ranking professionals such as an <strong>ISRO scientist, IAS officer, or IPS officer</strong>, using fake ID cards and fabricated documents to gain the trust of his victims. He often claims to be seeking a bride and lures women, particularly working professionals in <strong>Pune, Mumbai, and Thane</strong>, into his trap. Once he gains their trust, he manipulates them emotionally and financially, defrauding them of significant amounts of money.He even persuades women to take instant loans, claiming he is in urgent need of money and promising to repay them within a few days, which he never does.</p>
+  <p><strong>Reports indicate that he has duped over 50 women</strong>, extracting amounts ranging from <strong>₹5 lakh to ₹35 lakh</strong> from individual victims. He has <strong>multiple legal cases</strong> registered against him for cheating and fraud. Despite his arrests, he continues to exploit unsuspecting individuals by adopting new aliases and strategies.</p>
+  <p>If you have encountered this individual or fallen victim to his scams, please report it immediately to the <strong>Thane Crime Branch:</strong></p>
+  <ul>
+    <li>Email: cp.thane.online@mahapolice.gov.in</li>
+    <li>Email: lcb.thane.r@mahapolice.gov.in</li>
+    <li>Phone: 022-25343567</li>
+  </ul>
+  <p>This page is dedicated to raising awareness about his fraudulent activities. <strong>Stay vigilant and do not fall for his scams!</strong></p>
 </section>
 
+
 <section class="video-section">
+
 <h2>Video Evidences</h2>
 <iframe src="https://www.youtube.com/embed/ubxJvnvhow8" frameborder="0" allowfullscreen style="margin-bottom: 20px;"></iframe>
 
-<iframe src="https://youtu.be/hPlx547D30s?si=yyehfeXDI7SZe3Gt" frameborder="0" allowfullscreen style="margin-bottom: 20px;"></iframe>
+<iframe src="https://www.youtube.com/embed/hPlx547D30s" frameborder="0" allowfullscreen style="margin-bottom: 20px;"></iframe>
 
-<iframe src="https://youtu.be/WdK7qwMdVVo?si=eZqGtSKcHOESudB1" frameborder="0" allowfullscreen style="margin-bottom: 20px;"></iframe>
+<iframe src="https://www.youtube.com/embed/WdK7qwMdVVo" frameborder="0" allowfullscreen style="margin-bottom: 20px;"></iframe>
+
 </section>
 
 <section class="gallery">
-<h2>Fake ID and Documents</h2>
-<div class="gallery">
-<img src="id_card1.jpg" alt="Fake ID">
-<img src="isroSelfie.png" alt="Fake Proofs">  
-<img src="isro_badge.jpg" alt="Fake ISRO ID">
-<img src="screenshot_profile1.jpg" alt="Fake instagram Profile">
-<img src="screenshot_instagram.jpg" alt="Instagram ID">
-<img src="fake_identity_docs.jpg" alt="Fake Documents">
-<img src="news_clip1.jpg" alt="News Screenshot 1">
-<img src="news_clip2.jpg" alt="News Screenshot 2">  
-</div>
+  <h2>Fake ID and Documents</h2>
+  <div class="gallery">
+    <img src="id_card1.jpg" alt="Fake ID">
+    <img src="isroSelfie.png" alt="Fake Proofs">  
+    <img src="isro_badge.jpg" alt="Fake ISRO ID">
+    <img src="screenshot_profile1.jpg" alt="Fake Instagram Profile">
+    <img src="screenshot_instagram.jpg" alt="Instagram ID">
+    <img src="fake_identity_docs.jpg" alt="Fake Certificates">
+    <img src="news_clip1.jpg" alt="News Article 1">
+    <img src="news_clip2.jpg" alt="News Article 2">  
+    <img src="12.PNG" alt="News Article 3">  
+    <img src="I1.png" alt="News Article 4">  
+    <img src="15.jpg" alt="News Article 5">  
+    <img src="10.PNG" alt="Fake Matrimonial Profile1">  
+    <img src="11.PNG" alt="Fake Matrimonial Profile 2">  
+    <img src="13.jpeg" alt="Fraudster-Mhatre">  
+    <img src="14.jpeg" alt="Scammer-Mhatre">  
+  </div>
 </section>
+
 
 <section class="news-articles">
 <h2>News Articles</h2>
@@ -164,7 +184,10 @@ text-decoration: underline;
   <a href="https://www.dnaindia.com/india/video-man-poses-as-ips-officer-dupes-several-women-in-mumbai-2809900" target="_blank">13. DNA India - Video</a>
 <a href="https://www.esakal.com/amp/mumbai/5-lakh-fraud-young-woman-wedding-site-240548" target="_blank">14. Esakal</a>
 
-  
+  <section>
+  <p><strong>Disclaimer:</strong> All information provided on this page has been sourced from publicly available news articles. This page is intended solely for raising awareness and educating individuals about fraudulent activities. The creators of this page do not intend to defame or harm anyone’s reputation. If you believe any information is inaccurate, please contact the relevant authorities or news outlets for clarification.</p>
+</section>
+
 
 </section>
 
