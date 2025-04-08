@@ -53,19 +53,18 @@ display: block;
 
 .gallery {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping of rows */
-  justify-content: center; /* Centers the images */
-  gap: 20px; /* Adds spacing between images */
+  flex-wrap: wrap; /* Allows the images to wrap into rows */
+  justify-content: space-between; /* Ensures even spacing between images */
+  gap: 15px; /* Adds spacing between images */
 }
 
 .gallery img {
-  flex: 0 1 calc(20% - 10px); /* Ensures all 5 images fit in one line */
-  width: calc(130% * 20%); /* Increases width by approximately 30% */
-  height: auto; /* Keeps aspect ratio consistent */
+  width: calc(18% - 10px); /* Adjust width to fit 5 images per row */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 200px; /* Sets a consistent height */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
-
 
 
 .news-articles {
