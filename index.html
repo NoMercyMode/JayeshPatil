@@ -56,18 +56,33 @@ margin: 0 auto;
 display: block;
 }
 
-.gallery {
+.gallery-row {
   display: flex;
   flex-wrap: wrap; /* Allows the images to wrap into rows */
   justify-content: space-between; /* Ensures even spacing between images */
+  margin-bottom: 20px;
   gap: 15px; /* Adds spacing between images */
 }
 
-.gallery img {
-  width: calc(18% - 10px); /* Adjust width to fit 5 images per row */
-  height: 500px; /* Maintains aspect ratio */
+.gallery-row img {
+  width: calc(20% - 10px);
+  height: 500px;
+  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Landscape row */
+.center-landscape {
+  justify-content: center;
+  gap: 50px;
+}
+
+.landscape-img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .news-articles {
@@ -130,22 +145,40 @@ text-decoration: underline;
 
 <section class="gallery">
   <h2>Fake ID and Documents</h2>
-  <div class="gallery">
+  
+    <div class="gallery-row center-landscape">
+    <img src="id_card1.jpg" alt="Landscape Image 1" class="landscape-img">
+    <img src="isroSelfie.png" alt="isroSelfie.png" class="landscape-img">
+  </div>
+   <!-- Second row -->
+  <div class="gallery-row">
     <img src="isro_badge.jpg" alt="Fake ISRO ID-Jayesh Patil-Scientist">
-    <img src="isroSelfie.png" alt="Adarsh Prashant Mhatre">  
-    <img src="id_card1.jpg" alt="JAyesh Patil-isro Scientist">
-    <img src="screenshot_profile1.jpg" alt="Adarsh Prashant Mhatre">
-    <img src="screenshot_instagram.jpg" alt="Prem Mhatre">
     <img src="news_clip1.jpg" alt="Adarsh Prashant Mhatre">
-    <img src="news_clip2.jpg" alt="Prem Mhatre PAnvel alibaug">  
-    <img src="12.PNG" alt="Adarsh prashant Mhatre alibaug">  
-    <img src="I1.png" alt="isro Scientist">  
-    <img src="15.jpg" alt="Adarsh Mhatre Panvel alibaug">  
+    <img src="news_clip2.jpg" alt="Prem Mhatre PAnvel alibaug"> 
+    <img src="screenshot_profile1.jpg" alt="Adarsh Prashant Mhatre">
+    <img src="14.jpeg" alt="Scammer fraudster Adarsh Mhatre">  
+  </div>
+  
+   <!-- Third row -->
+  <div class="gallery-row">
     <img src="fake_identity_docs.jpg" alt="Prem Kiran MHatre CKT college panvel">
     <img src="10.PNG" alt="Adarsh Prashant Mhatre">  
-    <img src="11.PNG" alt="Adarsh Mhatre Rasayani">  
-    <img src="13.jpeg" alt="Jayesh PAtil Rasayani Isro Scientist">  
-    <img src="14.jpeg" alt="Scammer fraudster Adarsh Mhatre">  
+    <img src="12.PNG" alt="Adarsh Prashant Mhatre Alibaug">  
+    <img src="I1.png" alt="ISRO Scientist">  
+    <img src="15.jpg" alt="Adarsh Mhatre Panvel Alibaug">  
+  </div>
+  
+
+   
+<div class="gallery-row">
+    <img src="R1.jpg" alt="Prem Kiran Mhatre CKT college panvel">
+    <img src="R2.jpeg" alt="Adarsh Prashant Mhatre">  
+    <img src="R3.jpg" alt="Adarsh Mhatre Rasayani">  
+    <img src="13.jpeg" alt="Jayesh Patil Rasayani Isro Scientist">  
+    <img src="14.jpeg" alt="Scammer fraudster Adarsh Mhatre">
+     
+   
+   
   </div>
 </section>
 
